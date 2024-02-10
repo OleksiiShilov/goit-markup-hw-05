@@ -1,3 +1,4 @@
 {
-    "htmltagwrap.tag": "div"
+  "htmltagwrap.tag": "div",
+  "liveServer.settings.multiRootWorkspaceName": "goit-markup-hw-05"
 }
