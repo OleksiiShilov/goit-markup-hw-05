@@ -156,9 +156,11 @@ img {
   display: flex;
   background-color: #2e2f42;
   padding: 188px 0;
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/people-office1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -682,8 +684,8 @@ img {
   border: none;
 }
 
-.button-close:hover>.button-close-icon,
-.button-close:focus>.button-close-icon {
+.button-close:hover > .button-close-icon,
+.button-close:focus > .button-close-icon {
   fill: #ffffff;
 }
 
@@ -751,7 +753,7 @@ img {
   fill: #4d5ae5;
 }
 
-.form-label-input:focus+.modal-icon {
+.form-label-input:focus + .modal-icon {
   fill: #4d5ae5;
 }
 
@@ -829,7 +831,7 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input:checked+.label-checkbox span {
+.checkbox-input:checked + .label-checkbox span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
