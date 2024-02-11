@@ -560,7 +560,6 @@ img {
 
 .footer-subscribe-container {
   margin-left: auto;
-  display: block;
 }
 
 .subscribe-title {
@@ -578,6 +577,7 @@ img {
 .form-subscribe {
   max-width: 453px;
   display: flex;
+  gap: 24px;
 }
 
 .subscribe-input {
@@ -585,38 +585,41 @@ img {
   height: 40px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 4px;
-  background-color: #2e2f42;
+  background-color: transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: rgb(255, 255, 255);
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   letter-spacing: 0.04em;
   text-align: left;
   padding-left: 16px;
 }
 
 .button-subscribe {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  margin-left: 24px;
   display: flex;
   background-color: #4d5ae5;
   border-radius: 4px;
   border: none;
   align-items: center;
   justify-content: center;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    gap: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  cursor: pointer;
 }
 
-.subscribe-icon {fill: #FFFFFF}
+.subscribe-icon {
+  fill: #ffffff;
+  margin-left: 16px;
+}
 
 /* === Модальне вікно === */
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -707,7 +710,7 @@ img {
   margin-bottom: 4px;
   color: rgb(142, 143, 153);
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 
@@ -750,6 +753,10 @@ img {
   fill: #4d5ae5;
 }
 
+.form-label-textarea {
+  margin-bottom: 16px;
+}
+
 .form-textarea-input {
   width: 100%;
   height: 120px;
@@ -761,6 +768,9 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
+  resize: none;
 }
 
 .form-textarea-input::placeholder {
@@ -768,8 +778,6 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.004em;
-  padding-top: 8px;
-  padding-left: 12px;
 }
 
 .form-textarea-input:focus {
@@ -802,7 +810,7 @@ img {
   text-decoration: underline;
 }
 
-.label-checkbox span {
+.span-checkbox {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -813,6 +821,10 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
 }
 .checkbox-input:checked + .label-checkbox span {
   background-color: #404bbf;
@@ -839,11 +851,13 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.bottom-send:hover, background-color:focus {
+.bottom-send:hover,
+background-color:focus {
   background-color: #404bbf;
 }
