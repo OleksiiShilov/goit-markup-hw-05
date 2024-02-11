@@ -51,6 +51,7 @@ img {
   display: flex;
   align-items: center;
 }
+
 .navigation-list .link-logo {
   font-family: "Raleway", sans-serif;
   color: #4d5ae5;
@@ -155,11 +156,9 @@ img {
   display: flex;
   background-color: #2e2f42;
   padding: 188px 0;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)),
     url(../images/people-office1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -682,8 +681,9 @@ img {
   background-color: #404bbf;
   border: none;
 }
-.button-close:hover > .button-close-icon,
-.button-close:focus > .button-close-icon {
+
+.button-close:hover>.button-close-icon,
+.button-close:focus>.button-close-icon {
   fill: #ffffff;
 }
 
@@ -726,6 +726,7 @@ img {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-label-input:focus {
   border-color: #4d5ae5;
 }
@@ -749,7 +750,8 @@ img {
 .modal-icon:focus {
   fill: #4d5ae5;
 }
-.form-label-input:focus + .modal-icon {
+
+.form-label-input:focus+.modal-icon {
   fill: #4d5ae5;
 }
 
@@ -789,6 +791,7 @@ img {
   margin-bottom: 24px;
   width: 100%;
 }
+
 .checkbox-input {
   fill: transparent;
   margin-right: 8px;
@@ -798,13 +801,13 @@ img {
 }
 
 .label-checkbox {
-  display: flex;
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   align-items: center;
 }
+
 .check-link {
   color: #4d5ae5;
   text-decoration: underline;
@@ -825,7 +828,8 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-input:checked + .label-checkbox span {
+
+.checkbox-input:checked+.label-checkbox span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
