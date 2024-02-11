@@ -596,6 +596,8 @@ img {
   padding-left: 16px;
 }
 
+.subscribe-input::placeholder {color: #FFFFFF;}
+
 .button-subscribe {
   min-width: 165px;
   height: 40px;
@@ -613,6 +615,8 @@ img {
   text-align: center;
   cursor: pointer;
 }
+
+.button-subscribe:hover, .button-subscribe:focus {background-color:#404BBF;}
 
 .subscribe-icon {
   fill: #ffffff;
@@ -835,6 +839,10 @@ img {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+
+.checkbox-input:focus+.label-checkbox span {
+  border-color: #4D5AE5;
 }
 
 .bottom-send {
